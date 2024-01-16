@@ -8,6 +8,8 @@
   <title>Aprendiendo HTML</title>
   <!-- Añadir una etiqueta para SEO -->
   <meta name="description" content="Aprendiendo los fundamento de HTML">
+  <!-- Enlazar una hoja de estilos CSS -->
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <h2>Aprendiendo HTML</h2>
@@ -102,5 +104,49 @@
   <aside>aside - Represnta contenido complementario o secundario</aside>
   <section>section - Representa una sección de contenido genérico</section>
   <address>address - Representa una dirección física</address>
+
+  <hr>
+
+  <h2>Etiquetas de bloque vs etiquetas de línea</h2>
+  <div>
+    div - es la etiqueta de bloque por excelencia. Una etiqueta de bloque es la que genera saltos de línea
+    con las etiquetas que están a su mismo nivel y ocupa todo el ancho disponible en la pantalla.
+  </div>
+  <span>
+    span - es la etiqueta de línea por excelencia. Solo ocupan el espacio necesario según su contenido.
+  </span>
+  <span>👉Esta es otra etiqueta span👈</span>
+  <p>Ambas etiquetas div y span no tiene carga semántica.</p>
+
+  <hr>
+
+  <h2>Estilos CSS en HTML</h2>
+
+  <p>
+    Estilos directamente en etiquetas <span style="background: gold; font-weight: bold">esto tiene estilo</span>
+  </p>
+  <p>
+    La segunda forma es en el head del documento HMTL abrir las etiquetas style y ahí aplicar los estilos:
+  </p>
+  <pre>
+    <code>
+      &lthead&gt
+        &ltstyle&gt
+          h2 {
+            font-size: 14;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          }
+        &lt/style&gt
+      &lt/head&gt
+    </code>
+  </pre>
+  <p>La última forma y la más adecuada es agregando una hoja de estilos:</p>
+  <pre>
+    <code>
+      &lthead&gt
+        &ltlink rel="stylesheet" href="style.css"&gt
+      &lt/head&gt
+    </code>
+  </pre>
 </body>
 </html>
