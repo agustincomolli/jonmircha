@@ -12,8 +12,27 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <h2>Aprendiendo HTML</h2>
-  <p>Este es mi primer documento en HTML</p>
+  <h2 id="top">Aprendiendo HTML</h2>
+  <p>Curso dictado por Jon Mircha en jonmircha.com</p>
+  <h3>Indice de Temas</h3>
+  <ul>
+    <li><a href="#headings">Encabezados HTML</a></li>
+    <li><a href="#basics-semantics-tags">Etiquetas de texto básicas y etiquetas semánticas</a></li>
+    <li><a href="#jump-tags">Etiquetas de salto</a></li>
+    <li><a href="#formating-tags">Etiquetas de formateo</a></li>
+    <li><a href="#structure-semantic-tags">Etiquetas semánticas estructurales</a></li>
+    <li><a href="#inline-block">Etiquetas de bloque vs etiquetas de línea</a></li>
+    <li><a href="#css-style">Estilos CSS en HTML</a></li>
+    <li><a href="#scripts">Scripts en HTML</a></li>
+    <li><a href="#images">Imágenes</a></li>
+    <li><a href="#images-svg">Imágenes en formato de código SVG</a></li>
+    <li><a href="#figure-tag">Figuras</a></li>
+    <li><a href="#orderer-lists">Listas Ordenadas</a></li>
+    <li><a href="#unorderer-lists">Listas Desordenadas</a></li>
+    <li><a href="#definition-lists">Listas de Definición</a></li>
+    <li><a href="#tables">Tablas</a></li>
+    <li><a href="#hyperlinks">Hipervínculos</a></li>
+  </ul>
 
   <hr>
 
@@ -26,17 +45,18 @@
   - HTML Reference - https://htmlreference.io/
   - Caracteres especiales HTML - https://desarrolloweb.com/articulos/1... -->
 
-  <h2>Encabezados HTML</h2>
+  <h2 id="headings">Encabezados HTML</h2>
   <h1>Encabezado de nivel 1</h1>
   <h2>Encabezado de nivel 2</h2>
   <h3>Encabezado de nivel 3</h3>
   <h4>Encabezado de nivel 4</h4>
   <h5>Encabezado de nivel 5</h5>
   <h6>Encabezado de nivel 6</h6>
+  <p><a href="#top">Arriba</a> ☝️</p>
 
   <hr>
 
-  <h2>Etiquetas de texto básicas y etiquetas semánticas</h2>
+  <h2 id="basics-semantics-tags">Etiquetas de texto básicas y etiquetas semánticas</h2>
   <p>
     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita amet esse facilis obcaecati autem sit nulla
     dolorem veniam consequatur maiores cupiditate corrupti, similique eaque eligendi nostrum, ab voluptatum, placeat
@@ -51,10 +71,11 @@
     Sólo se que no se nada
   </blockquote>
   <cite>Sócrates</cite>
+  <p><a href="#top">Arriba</a> ☝️</p>
 
   <hr>
 
-  <h2>Etiquetas de salto</h2>
+  <h2 id="jump-tags">Etiquetas de salto</h2>
   <!-- <br> es un salto de línea -->
   <p>
     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, ullam. <br> Expedita dolorem possimus ad vero
@@ -63,11 +84,12 @@
     pariatur
     facere!
   </p>
+  <p><a href="#top">Arriba</a> ☝️</p>
 
   <!-- <hr> Salto semáncti de contenido -->
   <hr>
 
-  <h2>Etiquetas de formateo</h2>
+  <h2 id="formating-tags">Etiquetas de formateo</h2>
   <pre>
     Lista de tareas:
     - HTML:
@@ -85,10 +107,11 @@
     else:
       print("Ok")
   </code>
+  <p><a href="#top">Arriba</a> ☝️</p>
 
   <hr>
 
-  <h2>Etiquetas semánticas estructurales</h2>
+  <h2 id="structure-semantic-tags">Etiquetas semánticas estructurales</h2>
 
   <header>header - Cabecera de un sitio web o de una sección</header>
   <main>
@@ -102,10 +125,11 @@
   <aside>aside - Represnta contenido complementario o secundario</aside>
   <section>section - Representa una sección de contenido genérico</section>
   <address>address - Representa una dirección física</address>
+  <p><a href="#top">Arriba</a> ☝️</p>
 
   <hr>
 
-  <h2>Etiquetas de bloque vs etiquetas de línea</h2>
+  <h2 id="inline-block">Etiquetas de bloque vs etiquetas de línea</h2>
   <div>
     div - es la etiqueta de bloque por excelencia. Una etiqueta de bloque es la que genera saltos de línea
     con las etiquetas que están a su mismo nivel y ocupa todo el ancho disponible en la pantalla.
@@ -115,10 +139,11 @@
   </span>
   <span>👉Esta es otra etiqueta span👈</span>
   <p>Ambas etiquetas div y span no tiene carga semántica.</p>
+  <p><a href="#top">Arriba</a> ☝️</p>
 
   <hr>
 
-  <h2>Estilos CSS en HTML</h2>
+  <h2 id="css-style">Estilos CSS en HTML</h2>
 
   <p>
     Estilos directamente en etiquetas <span style="background: gold; font-weight: bold">esto tiene estilo</span>
@@ -142,10 +167,11 @@
       &ltlink rel="stylesheet" href="style.css"&gt
     &lt/head&gt
   </code>
+  <p><a href="#top">Arriba</a> ☝️</p>
 
   <hr>
 
-  <h2>Scripts en HTML</h2>
+  <h2 id="scripts">Scripts en HTML</h2>
   <p>
     Hay dos formas de llamar al código JS en HTML, la primera es colocando las etiquetas &lt;script&gt; &lt;/script&gt;
     antes de la etiqueta de cierre &lt;/body&gt; al final del documento HTML.
@@ -163,10 +189,11 @@
     &lt;script src="./js/script.js"&gt;&lt;/script&gt;
     &lt;/body&gt;
   </code>
+  <p><a href="#top">Arriba</a> ☝️</p>
 
   <hr>
 
-  <h2>Imágenes</h2>
+  <h2 id="images">Imágenes</h2>
   <code>
     &lt;img src="./images/logo-agustin.png" alt="Logotipo de Agustín Comolli"&gt;
   </code>
@@ -175,10 +202,11 @@
   <p>
     Los formatos de imágenes soportados de la etiqueta son jpg, gif, png y svg entre otros.
   </p>
+  <p><a href="#top">Arriba</a> ☝️</p>
 
   <hr>
 
-  <h2>Imágenes en formato de código SVG</h2>
+  <h2 id="images-svg">Imágenes en formato de código SVG</h2>
   <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="330.000000pt" height="330.000000pt"
     viewBox="0 0 330.000000 330.000000" preserveAspectRatio="xMidYMid meet">
 
@@ -292,18 +320,20 @@
         2z" />
     </g>
   </svg>
+  <p><a href="#top">Arriba</a> ☝️</p>
 
   <hr>
 
-  <h2>Figuras</h2>
+  <h2 id="figure-tag">Figuras</h2>
   <figure>
     <img src="./images/logo-agustin.png" alt="Logotipo de Agustín Comolli">
     <figcaption>Logotipo de Agustín Comolli</figcaption>
   </figure>
+  <p><a href="#top">Arriba</a> ☝️</p>
 
   <hr>
 
-  <h2>Listas Ordenadas</h2>
+  <h2 id="orderer-lists">Listas Ordenadas</h2>
   <h3>Estaciones del año</h3>
   <ol>
     <li>Verano</li>
@@ -335,10 +365,11 @@
     <li>Invierno</li>
     <li>Primavera</li>
   </ol>
+  <p><a href="#top">Arriba</a> ☝️</p>
 
   <hr>
 
-  <h2>Listas Desordenadas</h2>
+  <h2 id="unorderer-lists">Listas Desordenadas</h2>
   <h3>Cosas por hacer</h3>
   <ul type="disc">
     <li>Estudiar HTML</li>
@@ -360,10 +391,11 @@
     <li>Estudiar CSS</li>
     <li>Estudiar JS</li>
   </ul>
+  <p><a href="#top">Arriba</a> ☝️</p>
 
   <hr>
 
-  <h2>Listas de Definición</h2>
+  <h2 id="definition-lists">Listas de Definición</h2>
   <h3>Lenguajes para Desarrollo Frontend</h3>
   <dl>
     <dt>HTML</dt>
@@ -373,6 +405,89 @@
     <dt>JS</dt>
     <dd>Java Script</dd>
   </dl>
+  <p><a href="#top">Arriba</a> ☝️</p>
+
+  <hr>
+
+  <h2 id="tables">Tablas</h2>
+  <table>
+    <tr>
+      <th>Nombre</th>
+      <th>Edad</th>
+      <th>Correo electrónico</th>
+    </tr>
+    <tr>
+      <td>Agustín</td>
+      <td>46</td>
+      <td>agustincomolli@yahoo.com.ar</td>
+    </tr>
+    <tr>
+      <td>Lorena</td>
+      <td>46</td>
+      <td>lormelmir@gmail.com</td>
+    </tr>
+    <tr>
+      <td>Adrián</td>
+      <td>48</td>
+      <td>facundoadriangomez@yahoo.com.ar</td>
+    </tr>
+  </table>
+
+  <br> <br>
+
+  <!-- Otra forma -->
+  <table>
+    <thead>
+      <tr>
+        <th colspan="3">Mis contactos</th>
+      </tr>
+      <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>Correo electrónico</th>
+      </tr>
+      </thead>
+    <tbody>
+      <tr>
+        <td>Agustín</td>
+        <td>46</td>
+        <td>agustincomolli@yahoo.com.ar</td>
+      </tr>
+      <tr>
+        <td>Lorena</td>
+        <td>46</td>
+        <td>lormelmir@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Adrián</td>
+        <td>48</td>
+        <td>facundoadriangomez@yahoo.com.ar</td>
+      </tr>
+      </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="3"><small>Estos son mis 3 contactos</small></th>
+      </tr>
+    </tfoot>
+  </table>
+  <p><a href="#top">Arriba</a> ☝️</p>
+
+  <hr>
+
+  <h2 id="hyperlinks">Hipervínculos</h2>
+  <!-- target="_blank" abre el hipervínculo en una nueva pestaña -->
+  <p>Haz clic 👉 <a href="https://www.google.com.ar" target="_blank">aquí</a> para ir a Google</p>
+  <p><a href="#top">Ir al inicio de este documento ☝️</a></p>
+  <p>👉 <a href="./other.html">Aquí</a> hay otra página para que visites.</p>
+  <p>Haz clic en la imágen para ir al sitio web de 8-bits 👇</p>
+  <p>
+    <a href="https://8-bits.up.railway.app/" target="_blank">
+      <img src="./images/logo-agustin.png" alt="Logo de Agustín" height="64">
+    </a>
+  </p>
+  <p><a href="#top">Arriba</a> ☝️</p>
+
+  <hr>
 
 
   <script>
