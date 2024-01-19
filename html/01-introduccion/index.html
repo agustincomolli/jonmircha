@@ -32,6 +32,10 @@
     <li><a href="#definition-lists">Listas de Definición</a></li>
     <li><a href="#tables">Tablas</a></li>
     <li><a href="#hyperlinks">Hipervínculos</a></li>
+    <li><a href="#hyperlinks-protocols">Hipervínculos con protocolos</a></li>
+    <li><a href="#interactives-elements">Elementos interactivos</a></li>
+    <li><a href="#media">Audio y video</a></li>
+    <li><a href="#iframes">Iframes</a></li>
   </ul>
 
   <hr>
@@ -103,9 +107,9 @@
     &ltp&gtPárrafo&lt/p&gt
 
     if parrafo == "":
-      print("No hay nada")
+    print("No hay nada")
     else:
-      print("Ok")
+    print("Ok")
   </code>
   <p><a href="#top">Arriba</a> ☝️</p>
 
@@ -153,18 +157,18 @@
   </p>
   <code>
     &lthead&gt
-      &ltstyle&gt
-        h2 {
-          font-size: 14;
-          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-      &lt/style&gt
+    &ltstyle&gt
+    h2 {
+    font-size: 14;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    &lt/style&gt
     &lt/head&gt
   </code>
   <p>La última forma y la más adecuada es agregando una hoja de estilos:</p>
   <code>
     &lthead&gt
-      &ltlink rel="stylesheet" href="style.css"&gt
+    &ltlink rel="stylesheet" href="style.css"&gt
     &lt/head&gt
   </code>
   <p><a href="#top">Arriba</a> ☝️</p>
@@ -178,7 +182,7 @@
   </p>
   <code>
     &lt;script&gt;
-      alert("Bienvenido a HTML");
+    alert("Bienvenido a HTML");
     &lt;/script&gt;
   </code>
   <p>
@@ -343,7 +347,7 @@
   </ol>
 
   <!-- Empezar la lista por el número 4 -->
-  <ol start="4"> 
+  <ol start="4">
     <li>Verano</li>
     <li>Otoño</li>
     <li>Invierno</li>
@@ -446,7 +450,7 @@
         <th>Edad</th>
         <th>Correo electrónico</th>
       </tr>
-      </thead>
+    </thead>
     <tbody>
       <tr>
         <td>Agustín</td>
@@ -463,7 +467,7 @@
         <td>48</td>
         <td>facundoadriangomez@yahoo.com.ar</td>
       </tr>
-      </tbody>
+    </tbody>
     <tfoot>
       <tr>
         <th colspan="3"><small>Estos son mis 3 contactos</small></th>
@@ -489,6 +493,47 @@
 
   <hr>
 
+  <h2 id="hyperlinks-protocols">Hipervínculos con protocolos</h2>
+  <p><a href="mailto:agustincomolli@yahoo.com.ar">Correo electrónico</a></p>
+  <p><a href="tel:2226680056">Teléfono</a></p>
+  <p><a href="https://api.whatsapp.com/send?phone=5492226680056" target="_blank">WhatsApp</a></p>
+  <p><a href="#top">Arriba</a> ☝️</p>
+
+  <hr>
+
+  <h2 id="interactives-elements">Elementos interactivos</h2>
+  <button onclick="alert('¡Haz hecho clic en el botón!')">Este es un botón</button>
+  <details>
+    <summary>Título</summary>
+    <article>
+      <h3>Subtítulo</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet nostrum, error explicabo architecto enim at
+        debitis rerum quaerat, ducimus autem libero incidunt ipsum accusantium aut qui ad sequi, non pariatur.
+      </p>
+      <img src="./images/logo-agustin.png" alt="Logotipo de Agustín" height="80px">
+    </article>
+  </details>
+  <dialog open>
+    Este es un cuadro modal
+  </dialog>
+  <p><a href="#top">Arriba</a> ☝️</p>
+
+  <hr>
+
+  <h2 id="media">Audio y video</h2>
+  <p><audio src="./media/epic-cinematic-trailer.mp3" controls preload="auto"></audio></p>
+  <p><video src="./media/cat.mp4" controls autoplay muted loop preload="auto"></video></p>
+  <p><a href="#top">Arriba</a> ☝️</p>
+
+  <hr>
+
+  <h2 id="iframes">Iframes</h2>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3266.0204914414526!2d-58.75936562518557!3d-35.05622678153529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bd1f6c51b94ef7%3A0xb82fb72cc3d63aa4!2sRivadavia%20340%2C%20B1814%20Ca%C3%B1uelas%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1705677974653!5m2!1ses-419!2sar"
+    style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <p><a href="#top">Arriba</a> ☝️</p>
 
   <script>
     alert("Bienvenido a HTML");
