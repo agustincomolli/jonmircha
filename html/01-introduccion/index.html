@@ -8,6 +8,12 @@
   <title>Aprendiendo HTML</title>
   <!-- Añadir una etiqueta para SEO -->
   <meta name="description" content="Aprendiendo los fundamento de HTML">
+  <!-- URL Canónica -->
+  <link rel="canonical" href="https://agustincomolli.com">
+  <!-- Icono de la página -->
+  <link rel="shortcut icon" href="./images/logo-agustin.png" type="image/x-icon">
+  <!-- Icono para el móvil -->
+  <link rel="apple-touch-icon" href="./images/logo-agustin.png">
   <!-- Enlazar una hoja de estilos CSS -->
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -38,6 +44,8 @@
     <li><a href="#iframes">Iframes</a></li>
     <li><a href="#forms">Formularios</a></li>
     <li><a href="#atributes-forms">Atributos de elementos de formularios</a></li>
+    <li><a href="#data-atributes">Data Atributes</a></li>
+    <li><a href="#seo-tags">Metaetiquetas para SEO</a></li>
   </ul>
 
   <hr>
@@ -695,8 +703,51 @@
     <input type="reset" value="Restablecer">
   </p>
   </form>
-  <p><a href="#top">Arriba</a> ☝️</p>
 
+  <h4>Formulario de contacto</h4>
+  <form action="https://formsubmit.co/agustincomolli@yahoo.com.ar" method="post">
+    <p>
+      <input type="text" name="name" id="name" placeholder="Nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+             title="Solo se aceptan letras y espacios en blanco" required>
+    </p>
+    <p>
+      <input type="email" name="email" id="email" required placeholder="Correo electrónico" 
+             pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+             title="Formato de correo inválido">
+    </p>
+    <p>
+      <textarea name="coments" id="coments" cols="30" rows="10" required placeholder="Comentarios"></textarea>
+    </p>
+    <p><input type="submit" value="Enviar"> <input type="reset" value="Restablecer"></p>
+  </form>
+  <p><a href="#top">Arriba</a> ☝️</p>
+  
+  <hr>
+  
+  <h2 id="data-atributes">Data Atributes</h2>
+  <ul>
+    <li data-id="1" data-name="spring">Primavera</li>
+    <li data-id="2" data-name="summer">Verano</li>
+    <li data-id="3" data-name="autumn">Otoño</li>
+    <li data-id="4" data-name="winter">Invierno</li>
+  </ul>
+  <p><a href="#top">Arriba</a> ☝️</p>
+  
+  <h2 id="seo-tags">Metaetiquetas para SEO</h2>
+  <pre>
+    <code>
+      &lt;!-- URL Canónica --&gt;
+      &lt;link rel="canonical" href="https://agustincomolli.com"&gt;
+
+      &lt;!-- Icono de la página --&gt;
+      &lt;link rel="shortcut icon" href="./images/logo-agustin.png" type="image/x-icon"&gt;
+
+      &lt;!-- Icono para el móvil --"&gt;
+      &lt;link rel="apple-touch-icon" href="./images/logo-agustin.png"&gt;
+    </code>
+  </pre>
+
+  <p><a href="#top">Arriba</a> ☝️</p>
 
   <script>
     alert("Bienvenido a HTML");
