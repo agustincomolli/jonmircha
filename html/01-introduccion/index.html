@@ -54,6 +54,7 @@
     <li><a href="#atributes-forms">Atributos de elementos de formularios</a></li>
     <li><a href="#data-atributes">Data Atributes</a></li>
     <li><a href="#seo-tags">Metaetiquetas para SEO</a></li>
+    <li><a href="#accesibility">Accesibilidad Web</a></li>
   </ul>
 
   <hr>
@@ -549,12 +550,11 @@
   <h2 id="iframes">Iframes</h2>
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3266.0204914414526!2d-58.75936562518557!3d-35.05622678153529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bd1f6c51b94ef7%3A0xb82fb72cc3d63aa4!2sRivadavia%20340%2C%20B1814%20Ca%C3%B1uelas%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1705677974653!5m2!1ses-419!2sar"
-    style="border:0;" allowfullscreen="" loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"></iframe>
+    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   <p><a href="#top">Arriba</a> ☝️</p>
-  
+
   <hr>
-  
+
   <h2 id="forms">Formularios</h2>
   <h3>Elementos de formularios</h3>
   <p>
@@ -627,9 +627,9 @@
     </select>
   </p>
   <p><a href="#top">Arriba</a> ☝️</p>
-  
+
   <hr>
-  
+
   <h2 id="atributes-forms">Atributos de elementos de formularios</h2>
   <p>
     Readonly: <input type="text" name="" id="" value="Agustín Comolli" readonly>
@@ -647,15 +647,15 @@
       <!-- required impide el envío del formulario si el campo está vacío -->
       <!-- pattern lleva una expresión regular para validar el formulario -->
       <!-- autocomplete="off" desactiva el autocompletado para el campo -->
-      <input type="text" name="username" id="username" placeholder="Escribe tu usuario" 
-        required pattern="^[A-Za-z]+$" title="Ingresa solo letras" autocomplete="off">
+      <input type="text" name="username" id="username" placeholder="Escribe tu usuario" required pattern="^[A-Za-z]+$"
+        title="Ingresa solo letras" autocomplete="off">
     </p>
     <p>
       <label for="password">Contraseña: </label>
       <input type="password" name="password" id="password" placeholder="Escribe tu contraseña" required>
     </p>
     <p>
-      <input type="submit" value="Enviar"> 
+      <input type="submit" value="Enviar">
       <input type="reset" value="Restablecer">
     </p>
   </form>
@@ -671,57 +671,56 @@
         <option value="fr">Francés</option>
         <option value="it">Italiano</option>
         <option value="pt">Portugues</option>
-    </select>
-  </p>
-  <p>
-    Elige tu lenguaje de programación favorito:
-  </p>
-  <p>
-    <!-- Los input type="radio" tienen que tener todos el mismo nombre -->
-    <input type="radio" name="programing-language" id="js"><label for="js">JavaScript</label>
-    <!-- checked selecciona la opción -->
-    <input type="radio" name="programing-language" id="py" checked><label for="py">Python</label>
-    <input type="radio" name="programing-language" id="c++"><label for="c++">C++</label>
-  </p>
-  <p>Elige tus intereses:</p>
-  <p>
-    <label>
-      <input type="checkbox" name="interests" value="sports"> 
-      Deportes
-    </label>
-    <label>
-      <input type="checkbox" name="interests" value="finance"> 
-      Finanzas
-    </label>
-    <label>
-      <input type="checkbox" name="interests" value="health"> 
-      Salud
-    </label>
-    <label>
-      <input type="checkbox" name="interests" value="politics"> 
-      Política
-    </label>
-    <label>
-      <input type="checkbox" name="interests" value="technology"> 
-      Tecnología
-    </label>
-  </p>
-  <p>
-    <input type="submit" value="Enviar">
-    <input type="reset" value="Restablecer">
-  </p>
+      </select>
+    </p>
+    <p>
+      Elige tu lenguaje de programación favorito:
+    </p>
+    <p>
+      <!-- Los input type="radio" tienen que tener todos el mismo nombre -->
+      <input type="radio" name="programing-language" id="js"><label for="js">JavaScript</label>
+      <!-- checked selecciona la opción -->
+      <input type="radio" name="programing-language" id="py" checked><label for="py">Python</label>
+      <input type="radio" name="programing-language" id="c++"><label for="c++">C++</label>
+    </p>
+    <p>Elige tus intereses:</p>
+    <p>
+      <label>
+        <input type="checkbox" name="interests" value="sports">
+        Deportes
+      </label>
+      <label>
+        <input type="checkbox" name="interests" value="finance">
+        Finanzas
+      </label>
+      <label>
+        <input type="checkbox" name="interests" value="health">
+        Salud
+      </label>
+      <label>
+        <input type="checkbox" name="interests" value="politics">
+        Política
+      </label>
+      <label>
+        <input type="checkbox" name="interests" value="technology">
+        Tecnología
+      </label>
+    </p>
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Restablecer">
+    </p>
   </form>
 
   <h4>Formulario de contacto</h4>
   <form action="https://formsubmit.co/agustincomolli@yahoo.com.ar" method="post">
     <p>
       <input type="text" name="name" id="name" placeholder="Nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
-             title="Solo se aceptan letras y espacios en blanco" required>
+        title="Solo se aceptan letras y espacios en blanco" required>
     </p>
     <p>
-      <input type="email" name="email" id="email" required placeholder="Correo electrónico" 
-             pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
-             title="Formato de correo inválido">
+      <input type="email" name="email" id="email" required placeholder="Correo electrónico"
+        pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" title="Formato de correo inválido">
     </p>
     <p>
       <textarea name="coments" id="coments" cols="30" rows="10" required placeholder="Comentarios"></textarea>
@@ -729,9 +728,9 @@
     <p><input type="submit" value="Enviar"> <input type="reset" value="Restablecer"></p>
   </form>
   <p><a href="#top">Arriba</a> ☝️</p>
-  
+
   <hr>
-  
+
   <h2 id="data-atributes">Data Atributes</h2>
   <ul>
     <li data-id="1" data-name="spring">Primavera</li>
@@ -740,7 +739,7 @@
     <li data-id="4" data-name="winter">Invierno</li>
   </ul>
   <p><a href="#top">Arriba</a> ☝️</p>
-  
+
   <h2 id="seo-tags">Metaetiquetas para SEO</h2>
   <pre>
     <code>
@@ -755,6 +754,24 @@
     </code>
   </pre>
 
+  <p><a href="#top">Arriba</a> ☝️</p>
+
+  <hr>
+
+  <h2 id="accesibility">Accesibilidad Web</h2>
+  <h3 role="title">Las Estaciones del Año</h3>
+  <ul role="list">
+    <li tabindex="1" role="listitem">Verano</li>
+    <li tabindex="2" role="listitem">Otoño</li>
+    <li tabindex="3" role="listitem">Invierno</li>
+    <li tabindex="4" role="listitem">Primavera</li>
+  </ul>
+  <p>
+    <a href="#" 
+      aria-label="En este enlace encontrarás más información sobre las estaciones del año" 
+      target="_blank"
+      role="link">Para más información...</a>
+  </p>
   <p><a href="#top">Arriba</a> ☝️</p>
 
   <script>
